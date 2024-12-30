@@ -1,0 +1,34 @@
+[2024-12-30 12:34:10,076] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_py_dag_V4.get_name manual__2024-12-30T12:34:09.200557+00:00 [queued]>
+[2024-12-30 12:34:10,083] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: first_py_dag_V4.get_name manual__2024-12-30T12:34:09.200557+00:00 [queued]>
+[2024-12-30 12:34:10,083] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-30 12:34:10,083] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2024-12-30 12:34:10,083] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-30 12:34:10,097] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): get_name> on 2024-12-30 12:34:09.200557+00:00
+[2024-12-30 12:34:10,102] {standard_task_runner.py:52} INFO - Started process 14639 to run task
+[2024-12-30 12:34:10,104] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'first_py_dag_V4', 'get_name', 'manual__2024-12-30T12:34:09.200557+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpksqcums1', '--error-file', '/tmp/tmpoc7hxpr_']
+[2024-12-30 12:34:10,105] {standard_task_runner.py:80} INFO - Job 34: Subtask get_name
+[2024-12-30 12:34:10,144] {task_command.py:370} INFO - Running <TaskInstance: first_py_dag_V4.get_name manual__2024-12-30T12:34:09.200557+00:00 [running]> on host 0766066e7c2f
+[2024-12-30 12:34:10,197] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=swetansu
+AIRFLOW_CTX_DAG_ID=first_py_dag_V4
+AIRFLOW_CTX_TASK_ID=get_name
+AIRFLOW_CTX_EXECUTION_DATE=2024-12-30T12:34:09.200557+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-12-30T12:34:09.200557+00:00
+[2024-12-30 12:34:10,198] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/first_dag.py", line 23, in get_name
+    ti.xcom_push(key="first_name", Value="swetansu")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+TypeError: xcom_push() got an unexpected keyword argument 'Value'
+[2024-12-30 12:34:10,204] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=first_py_dag_V4, task_id=get_name, execution_date=20241230T123409, start_date=20241230T123410, end_date=20241230T123410
+[2024-12-30 12:34:10,211] {standard_task_runner.py:97} ERROR - Failed to execute job 34 for task get_name (xcom_push() got an unexpected keyword argument 'Value'; 14639)
+[2024-12-30 12:34:10,236] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-12-30 12:34:10,271] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
