@@ -3100,3 +3100,31 @@ TypeError: The key has to be a string and is <class 'int'>:1
 [2024-12-30 11:49:24,926] {logging_mixin.py:115} INFO - [2024-12-30 11:49:24,926] {dag.py:2379} INFO - Sync 1 DAGs
 [2024-12-30 11:49:24,941] {logging_mixin.py:115} INFO - [2024-12-30 11:49:24,941] {dag.py:2931} INFO - Setting next_dagrun for first_dag_V3 to 2024-12-31T00:00:00+00:00, run_after=2025-01-01T00:00:00+00:00
 [2024-12-30 11:49:24,947] {processor.py:161} INFO - Processing /opt/airflow/dags/first_dag.py took 0.049 seconds
+[2024-12-30 11:49:54,991] {processor.py:153} INFO - Started process (PID=11935) to work on /opt/airflow/dags/first_dag.py
+[2024-12-30 11:49:54,992] {processor.py:641} INFO - Processing file /opt/airflow/dags/first_dag.py for tasks to queue
+[2024-12-30 11:49:54,993] {logging_mixin.py:115} INFO - [2024-12-30 11:49:54,993] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/first_dag.py
+[2024-12-30 11:49:54,999] {processor.py:651} INFO - DAG(s) dict_keys(['first_dag_V3']) retrieved from /opt/airflow/dags/first_dag.py
+[2024-12-30 11:49:55,014] {logging_mixin.py:115} INFO - [2024-12-30 11:49:55,014] {dag.py:2379} INFO - Sync 1 DAGs
+[2024-12-30 11:49:55,028] {logging_mixin.py:115} INFO - [2024-12-30 11:49:55,028] {dag.py:2931} INFO - Setting next_dagrun for first_dag_V3 to 2024-12-31T00:00:00+00:00, run_after=2025-01-01T00:00:00+00:00
+[2024-12-30 11:49:55,035] {processor.py:161} INFO - Processing /opt/airflow/dags/first_dag.py took 0.048 seconds
+[2024-12-30 11:50:25,073] {processor.py:153} INFO - Started process (PID=11967) to work on /opt/airflow/dags/first_dag.py
+[2024-12-30 11:50:25,083] {processor.py:641} INFO - Processing file /opt/airflow/dags/first_dag.py for tasks to queue
+[2024-12-30 11:50:25,084] {logging_mixin.py:115} INFO - [2024-12-30 11:50:25,084] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/first_dag.py
+[2024-12-30 11:50:25,090] {processor.py:651} INFO - DAG(s) dict_keys(['first_dag_V3']) retrieved from /opt/airflow/dags/first_dag.py
+[2024-12-30 11:50:25,110] {logging_mixin.py:115} INFO - [2024-12-30 11:50:25,110] {dag.py:2379} INFO - Sync 1 DAGs
+[2024-12-30 11:50:25,129] {logging_mixin.py:115} INFO - [2024-12-30 11:50:25,128] {dag.py:2931} INFO - Setting next_dagrun for first_dag_V3 to 2024-12-31T00:00:00+00:00, run_after=2025-01-01T00:00:00+00:00
+[2024-12-30 11:50:25,138] {processor.py:161} INFO - Processing /opt/airflow/dags/first_dag.py took 0.067 seconds
+[2024-12-30 11:50:55,168] {processor.py:153} INFO - Started process (PID=11990) to work on /opt/airflow/dags/first_dag.py
+[2024-12-30 11:50:55,168] {processor.py:641} INFO - Processing file /opt/airflow/dags/first_dag.py for tasks to queue
+[2024-12-30 11:50:55,169] {logging_mixin.py:115} INFO - [2024-12-30 11:50:55,169] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/first_dag.py
+[2024-12-30 11:50:55,175] {processor.py:651} INFO - DAG(s) dict_keys(['first_dag_V3']) retrieved from /opt/airflow/dags/first_dag.py
+[2024-12-30 11:50:55,194] {logging_mixin.py:115} INFO - [2024-12-30 11:50:55,193] {dag.py:2379} INFO - Sync 1 DAGs
+[2024-12-30 11:50:55,208] {logging_mixin.py:115} INFO - [2024-12-30 11:50:55,208] {dag.py:2931} INFO - Setting next_dagrun for first_dag_V3 to 2024-12-31T00:00:00+00:00, run_after=2025-01-01T00:00:00+00:00
+[2024-12-30 11:50:55,215] {processor.py:161} INFO - Processing /opt/airflow/dags/first_dag.py took 0.052 seconds
+[2024-12-30 11:51:25,269] {processor.py:153} INFO - Started process (PID=12022) to work on /opt/airflow/dags/first_dag.py
+[2024-12-30 11:51:25,279] {processor.py:641} INFO - Processing file /opt/airflow/dags/first_dag.py for tasks to queue
+[2024-12-30 11:51:25,280] {logging_mixin.py:115} INFO - [2024-12-30 11:51:25,280] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/first_dag.py
+[2024-12-30 11:51:25,287] {processor.py:651} INFO - DAG(s) dict_keys(['first_dag_V3']) retrieved from /opt/airflow/dags/first_dag.py
+[2024-12-30 11:51:25,306] {logging_mixin.py:115} INFO - [2024-12-30 11:51:25,306] {dag.py:2379} INFO - Sync 1 DAGs
+[2024-12-30 11:51:25,322] {logging_mixin.py:115} INFO - [2024-12-30 11:51:25,322] {dag.py:2931} INFO - Setting next_dagrun for first_dag_V3 to 2024-12-31T00:00:00+00:00, run_after=2025-01-01T00:00:00+00:00
+[2024-12-30 11:51:25,329] {processor.py:161} INFO - Processing /opt/airflow/dags/first_dag.py took 0.063 seconds
