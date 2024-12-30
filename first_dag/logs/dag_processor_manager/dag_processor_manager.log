@@ -4832,3 +4832,5 @@ File Path                       PID    Runtime      # DAGs    # Errors  Last Run
 ------------------------------  -----  ---------  --------  ----------  --------------  -------------------
 /opt/airflow/dags/first_dag.py                           1           0  0.10s           2024-12-30T12:48:41
 ================================================================================
+[2024-12-30 12:49:06,208] {manager.py:690} INFO - Searching for files in /opt/airflow/dags
+[2024-12-30 12:49:06,210] {manager.py:693} INFO - There are 1 files in /opt/airflow/dags

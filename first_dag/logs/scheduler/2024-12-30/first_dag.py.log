@@ -4109,3 +4109,10 @@ NameError: name 'task2' is not defined
 [2024-12-30 12:48:41,202] {logging_mixin.py:115} INFO - [2024-12-30 12:48:41,202] {dag.py:2379} INFO - Sync 1 DAGs
 [2024-12-30 12:48:41,226] {logging_mixin.py:115} INFO - [2024-12-30 12:48:41,226] {dag.py:2931} INFO - Setting next_dagrun for first_py_dag_V6 to 2024-12-31T00:00:00+00:00, run_after=2025-01-01T00:00:00+00:00
 [2024-12-30 12:48:41,233] {processor.py:161} INFO - Processing /opt/airflow/dags/first_dag.py took 0.075 seconds
+[2024-12-30 12:49:11,293] {processor.py:153} INFO - Started process (PID=15577) to work on /opt/airflow/dags/first_dag.py
+[2024-12-30 12:49:11,303] {processor.py:641} INFO - Processing file /opt/airflow/dags/first_dag.py for tasks to queue
+[2024-12-30 12:49:11,304] {logging_mixin.py:115} INFO - [2024-12-30 12:49:11,304] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/first_dag.py
+[2024-12-30 12:49:11,310] {processor.py:651} INFO - DAG(s) dict_keys(['first_py_dag_V6']) retrieved from /opt/airflow/dags/first_dag.py
+[2024-12-30 12:49:11,326] {logging_mixin.py:115} INFO - [2024-12-30 12:49:11,326] {dag.py:2379} INFO - Sync 1 DAGs
+[2024-12-30 12:49:11,341] {logging_mixin.py:115} INFO - [2024-12-30 12:49:11,341] {dag.py:2931} INFO - Setting next_dagrun for first_py_dag_V6 to 2024-12-31T00:00:00+00:00, run_after=2025-01-01T00:00:00+00:00
+[2024-12-30 12:49:11,348] {processor.py:161} INFO - Processing /opt/airflow/dags/first_dag.py took 0.057 seconds
