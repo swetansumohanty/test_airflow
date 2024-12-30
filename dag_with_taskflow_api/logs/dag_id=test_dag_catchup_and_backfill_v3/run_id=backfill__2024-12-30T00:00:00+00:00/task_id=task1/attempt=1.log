@@ -1,0 +1,30 @@
+[2024-12-30 15:52:34,499] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: test_dag_catchup_and_backfill_v3.task1 backfill__2024-12-30T00:00:00+00:00 [queued]>
+[2024-12-30 15:52:34,519] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: test_dag_catchup_and_backfill_v3.task1 backfill__2024-12-30T00:00:00+00:00 [queued]>
+[2024-12-30 15:52:34,519] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-30 15:52:34,519] {taskinstance.py:1357} INFO - Starting attempt 1 of 6
+[2024-12-30 15:52:34,519] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-30 15:52:34,560] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): task1> on 2024-12-30 00:00:00+00:00
+[2024-12-30 15:52:34,566] {standard_task_runner.py:52} INFO - Started process 626 to run task
+[2024-12-30 15:52:34,583] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'test_dag_catchup_and_backfill_v3', 'task1', 'backfill__2024-12-30T00:00:00+00:00', '--job-id', '16', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dags_with_catchup_and_backfill.py', '--cfg-path', '/tmp/tmpn6moq95i', '--error-file', '/tmp/tmpu42cohyl']
+[2024-12-30 15:52:34,584] {standard_task_runner.py:80} INFO - Job 16: Subtask task1
+[2024-12-30 15:52:34,709] {task_command.py:370} INFO - Running <TaskInstance: test_dag_catchup_and_backfill_v3.task1 backfill__2024-12-30T00:00:00+00:00 [running]> on host 3ce865646fe0
+[2024-12-30 15:52:34,872] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=swetansu
+AIRFLOW_CTX_DAG_ID=test_dag_catchup_and_backfill_v3
+AIRFLOW_CTX_TASK_ID=task1
+AIRFLOW_CTX_EXECUTION_DATE=2024-12-30T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=backfill__2024-12-30T00:00:00+00:00
+[2024-12-30 15:52:34,873] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2024-12-30 15:52:34,875] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo test_catchup']
+[2024-12-30 15:52:34,894] {subprocess.py:85} INFO - Output:
+[2024-12-30 15:52:34,896] {subprocess.py:92} INFO - test_catchup
+[2024-12-30 15:52:34,897] {subprocess.py:96} INFO - Command exited with return code 0
+[2024-12-30 15:52:34,947] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=test_dag_catchup_and_backfill_v3, task_id=task1, execution_date=20241230T000000, start_date=20241230T155234, end_date=20241230T155234
+[2024-12-30 15:52:34,992] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-12-30 15:52:35,059] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-30 15:52:35,094] {dagrun.py:562} INFO - Marking run <DagRun test_dag_catchup_and_backfill_v3 @ 2024-12-30 00:00:00+00:00: backfill__2024-12-30T00:00:00+00:00, externally triggered: False> successful
+[2024-12-30 15:52:35,094] {dagrun.py:622} INFO - DagRun Finished: dag_id=test_dag_catchup_and_backfill_v3, execution_date=2024-12-30 00:00:00+00:00, run_id=backfill__2024-12-30T00:00:00+00:00, run_start_date=2024-12-30 15:52:29.176169+00:00, run_end_date=2024-12-30 15:52:35.094705+00:00, run_duration=5.918536, state=success, external_trigger=False, run_type=backfill, data_interval_start=2024-12-30 00:00:00+00:00, data_interval_end=2024-12-31 00:00:00+00:00, dag_hash=None
