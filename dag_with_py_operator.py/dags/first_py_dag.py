@@ -30,7 +30,7 @@ def get_age(ti):
 
 
 with DAG(
-    dag_id="first_py_dag_V6",
+    dag_id="first_py_dag_V7",
     description="my first py dag",
     start_date=datetime(2024, 12, 30, 2),
     schedule_interval="@daily",
